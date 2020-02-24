@@ -1,0 +1,14 @@
+<h1>Billboard Lists</h1>
+
+<h3> <%= @list.name %>
+ <% if @songs.any? %>
+  <% @songs.each do |song| %>
+    <p><%= song.name %></p>
+   <%= link_to 'Remove from Billboard', remove_list_song_path(@list, song), method: :delete %>
+  <% end %>
+<% end %>
+
+<%= link_to 'Add Song to Billboard List', new_list_song_path(@list) %>
+<br></br> 
+<%= link_to 'Back', lists_path %>
+
