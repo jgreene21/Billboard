@@ -5,21 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-list1 = List.create(name: "Hot 100")
-  100.times do |i|
-    song = Faker::Music.album 
-    list1.songs.create(name: "#{song}")
-list2 = List.create(name: "Top Pop")
-  100.times do |i|
-    song = Faker::Music.album 
-    list2.songs.create(name: "#{song}")
-list3 = List.create(name: "Social 50")
-  50.times do |i|  
-    song = Faker::Music.album 
-    list3.songs.create(name: "#{song}")
-    end
-  end
-end  
 
 require 'faker'
 

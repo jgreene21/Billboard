@@ -14,6 +14,6 @@ Rails.application.routes.draw do
  post 'add_list_song/:id/:song_id', to: 'lists#add_song', as: 'add_list_song'
  
  delete 'remove_list_song/:id/:song_id', to: 'lists#remove_song', as: 'remove_list_song'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+#   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
 end 

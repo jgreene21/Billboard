@@ -1,0 +1,12 @@
+<h1>Add A Song To list: <%= @list.name %> </h1>
+
+<ul>
+	<% @songs.each do |song| %>
+	  <li>
+	    <%= link_to song.name, add_list_song_path(@list, song), method: :post %>
+	  </li>
+	  <hr />
+	<% end %>
+</ul>
+
+<%= link_to 'Back', lists_path %>
